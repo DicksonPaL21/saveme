@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {
   Accordion,
   AccordionContent,
@@ -19,9 +18,9 @@ const FrequentlyAskedQuestions = () => {
               Are there options to download videos on YouTube?
             </AccordionTrigger>
             <AccordionContent className="tracking-wide leading-relaxed font-light mt-2">
-              By default, YouTube doesn't allow you to download videos directly
-              to your devices; you can only save them in the YouTube app.
-              However, with a downloader tool like SaveMe, you can easily
+              By default, YouTube doesn&apos;t allow you to download videos
+              directly to your devices; you can only save them in the YouTube
+              app. However, with a downloader tool like SaveMe, you can easily
               download videos without any issues.
             </AccordionContent>
           </AccordionItem>
