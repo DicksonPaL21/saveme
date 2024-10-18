@@ -26,8 +26,8 @@ const More = () => {
             <span className="font-bold">
               🔥No Registration or Software Installation Needed:
             </span>{' '}
-            SaveMe YouTube Video Downloader is web-based, so there's no need to
-            install software or create an account.
+            SaveMe YouTube Video Downloader is web-based, so there&apos;s no
+            need to install software or create an account.
           </p>
 
           <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
