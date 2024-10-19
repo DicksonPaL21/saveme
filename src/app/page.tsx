@@ -1,12 +1,12 @@
-import Features from "@/components/Features"
-import Footer from "@/components/Footer"
-import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions"
-import HowToDownload from "@/components/HowToDownload"
-import More from "@/components/More"
-import PlaceholdersAndVanishInputDemo from "@/components/PlaceholdersAndVanishInputDemo"
-import SparklesPreview from "@/components/SparklesPreview"
-import SupportedResources from "@/components/SupportedResources"
-import { SVGs } from "@/components/ui/pulse-beam"
+import Features from '@/components/Features'
+import Footer from '@/components/Footer'
+import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions'
+import HowToDownload from '@/components/HowToDownload'
+import More from '@/components/More'
+import PlaceholdersAndVanishInputDemo from '@/components/PlaceholdersAndVanishInputDemo'
+import SparklesPreview from '@/components/SparklesPreview'
+import SupportedResources from '@/components/SupportedResources'
+import { SVGs } from '@/components/ui/pulse-beam'
 
 export default function Home() {
   return (

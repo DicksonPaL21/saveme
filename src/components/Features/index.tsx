@@ -1,25 +1,25 @@
-import { HoverEffect } from "../ui/card-hover-effect"
+import { HoverEffect } from '../ui/card-hover-effect'
 
 const projects = [
   {
-    title: "👀 User-friendly",
+    title: '👀 User-friendly',
     description:
       "When selecting a YouTube downloader, it's preferable to minimize the number of clicks required, which is achievable only if the downloader offers an intuitive interface.",
   },
   {
-    title: "📈 High-Quality downloads",
+    title: '📈 High-Quality downloads',
     description:
-      "When searching for a YouTube video downloader, choose one that can download high-resolution videos quickly.",
+      'When searching for a YouTube video downloader, choose one that can download high-resolution videos quickly.',
   },
   {
-    title: "🌏 Supports multiple formats",
+    title: '🌏 Supports multiple formats',
     description:
       "It's also essential to select software that supports multiple formats, such as .mkv and .mp4. This ensures you can easily watch your videos on any device.",
   },
   {
-    title: "🔥 Lightning speed",
+    title: '🔥 Lightning speed',
     description:
-      "You have better things to do than wait for downloads to finish, so choose a downloader that is extremely fast.",
+      'You have better things to do than wait for downloads to finish, so choose a downloader that is extremely fast.',
   },
 ]
 

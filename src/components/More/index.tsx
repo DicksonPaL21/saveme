@@ -32,20 +32,20 @@ const More = () => {
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
-            <span className="font-bold">🔥Supports All Popular Languages:</span>{" "}
+            <span className="font-bold">🔥Supports All Popular Languages:</span>{' '}
             This is a global tool that accommodates all widely spoken languages.
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">
               🔥No Registration or Software Installation Needed:
-            </span>{" "}
+            </span>{' '}
             SaveMe YouTube Video Downloader is web-based, so there&apos;s no
             need to install software or create an account.
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
-            <span className="font-bold">🔥Compatible with All Devices:</span>{" "}
+            <span className="font-bold">🔥Compatible with All Devices:</span>{' '}
             This platform works seamlessly on major devices, including mobiles,
             desktops, tablets, and more.
           </p>

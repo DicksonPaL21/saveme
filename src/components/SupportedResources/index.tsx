@@ -1,5 +1,5 @@
-import { FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react"
-import Link from "next/link"
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from 'lucide-react'
+import Link from 'next/link'
 
 const SupportedResources = () => {
   return (

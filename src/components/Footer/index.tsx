@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="mt-auto flex gap-6 flex-wrap items-center justify-center py-24 border-t">
+    <footer className="mt-auto flex flex-wrap items-center justify-center gap-6 border-t py-24">
       <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"

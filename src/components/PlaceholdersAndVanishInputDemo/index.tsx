@@ -1,12 +1,12 @@
-"use client"
+'use client'
 
-import { HoverBorderGradient } from "../ui/hover-border-gradient"
-import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input"
+import { HoverBorderGradient } from '../ui/hover-border-gradient'
+import { PlaceholdersAndVanishInput } from '../ui/placeholders-and-vanish-input'
 
 const PlaceholdersAndVanishInputDemo = () => {
   const placeholders = [
-    "Paste your video link here",
-    "https://www.youtube.com/watch?v=...",
+    'Paste your video link here',
+    'https://www.youtube.com/watch?v=...',
   ]
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +14,7 @@ const PlaceholdersAndVanishInputDemo = () => {
   }
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log("submitted")
+    console.log('submitted')
   }
   return (
     <div className="relative z-10 flex h-[40rem] w-full max-w-2xl flex-col items-center justify-center px-4">
@@ -22,7 +22,7 @@ const PlaceholdersAndVanishInputDemo = () => {
         <h2 className="text-xl font-extrabold text-black dark:text-white sm:text-5xl">
           <span className="bg-gradient-to-b from-zinc-800 to-zinc-950 bg-clip-text text-transparent dark:from-zinc-50 dark:to-zinc-200">
             YouTube
-          </span>{" "}
+          </span>{' '}
           <span className="bg-gradient-to-b from-amber-400 to-yellow-500 bg-clip-text text-transparent">
             Video Downloader
           </span>
