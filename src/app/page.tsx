@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="container flex min-h-screen flex-col font-[family-name:var(--font-geist-sans)]">
       <main className="mb-24 flex flex-col items-center gap-24">
-        <div className="relative flex h-[85vh] w-full items-center justify-center overflow-hidden">
+        <div className="relative flex h-[80vh] w-full items-center justify-center overflow-hidden">
           <PlaceholdersAndVanishInputDemo />
           <div className="absolute inset-0 flex items-center justify-center">
             <SVGs />

@@ -23,14 +23,6 @@ const SupportedResources = () => {
 
       <div className="mt-10 grid w-full max-w-sm grid-cols-2 gap-4 md:max-w-2xl md:grid-cols-4">
         <Link
-          href="/facebook"
-          className="flex w-full gap-4 rounded-lg bg-white p-4 leading-relaxed tracking-wide shadow-input dark:bg-neutral-900"
-        >
-          <FacebookIcon className="shrink-0" />
-          Facebook
-        </Link>
-
-        <Link
           href="/youtube"
           className="flex w-full gap-4 rounded-lg bg-white p-4 leading-relaxed tracking-wide shadow-input dark:bg-neutral-900"
         >
@@ -39,11 +31,11 @@ const SupportedResources = () => {
         </Link>
 
         <Link
-          href="/tiktok"
+          href="/facebook"
           className="flex w-full gap-4 rounded-lg bg-white p-4 leading-relaxed tracking-wide shadow-input dark:bg-neutral-900"
         >
           <FacebookIcon className="shrink-0" />
-          Tiktok
+          Facebook
         </Link>
 
         <Link
@@ -52,6 +44,14 @@ const SupportedResources = () => {
         >
           <InstagramIcon className="shrink-0" />
           Instagram
+        </Link>
+
+        <Link
+          href="/tiktok"
+          className="flex w-full gap-4 rounded-lg bg-white p-4 leading-relaxed tracking-wide shadow-input dark:bg-neutral-900"
+        >
+          <FacebookIcon className="shrink-0" />
+          Tiktok
         </Link>
       </div>
     </div>

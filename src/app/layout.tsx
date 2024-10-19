@@ -1,4 +1,5 @@
 import ArrowDown from '@/components/ArrowDown'
+import Navbar from '@/components/Navbar'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={cn('antialiased', geistSans.variable, geistMono.variable)}
       >
+        <Navbar />
         {children}
         <ArrowDown />
       </body>

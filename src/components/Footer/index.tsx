@@ -6,7 +6,7 @@ const Footer = () => {
       <p>
         <span className="font-bold">
           <span className="text-white">Save</span>
-          <span className="text-yellow-400">Me</span>
+          <span className="text-yellow-500">Me</span>
         </span>{' '}
         ©️ 2024. All Rights Reserved
       </p>
