@@ -1,4 +1,4 @@
-/* eslint-disable no-console, no-alert*/
+/* eslint-disable */
 
 'use client'
 
