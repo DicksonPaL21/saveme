@@ -1,7 +1,12 @@
 'use client'
 
-import { AnimatePresence, motion } from 'framer-motion'
-import { useCallback, useEffect, useState } from 'react'
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from 'framer-motion'
+import { useState } from 'react'
 
 const arrowVariant = {
   initial: {
@@ -25,21 +30,9 @@ const transition = {
 const ArrowDown = () => {
   const [isVisible, setVisible] = useState(true)
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleNavigation = useCallback((e: any) => {
-    const _window = e.currentTarget
-    const _opacity = 1 - _window.pageYOffset / 100
-    setVisible(Boolean(_opacity > 0 ? _opacity : 0))
-  }, [])
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleNavigation)
-
-    return () => {
-      // return a cleanup function to unregister our function since its gonna run multiple times
-      window.removeEventListener('scroll', handleNavigation)
-    }
-  }, [handleNavigation])
+  useMotionValueEvent(useScroll().scrollY, 'change', (value) => {
+    setVisible(value < 100)
+  })
 
   return (
     <AnimatePresence>
