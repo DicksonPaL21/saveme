@@ -32,7 +32,7 @@ const Features = () => {
           downloader for both Shorts and longer videos?
         </h3>
 
-        <div className="relative h-3 w-full max-w-4xl">
+        <div className="relative h-3 w-full max-w-3xl">
           {/* Gradients */}
           <div className="absolute inset-x-1/2 top-0 h-[2px] w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
           <div className="absolute inset-x-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />

@@ -9,10 +9,10 @@ const SupportedResources = () => {
           Supported Resources
         </h3>
 
-        <div className="relative h-3 w-full max-w-4xl">
+        <div className="relative h-3 w-full max-w-3xl">
           {/* Gradients */}
-          <div className="absolute inset-x-1/2 top-0 h-[2px] w-1/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
-          <div className="absolute inset-x-1/2 top-0 h-px w-1/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+          <div className="absolute inset-x-1/2 top-0 h-[2px] w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm md:w-1/3" />
+          <div className="absolute inset-x-1/2 top-0 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent md:w-1/3" />
           <div className="absolute inset-x-1/2 top-0 h-[5px] w-1/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm md:w-1/5" />
           <div className="absolute inset-x-1/2 top-0 h-px w-1/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent md:w-1/5" />
 

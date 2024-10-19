@@ -1,17 +1,25 @@
+import { cn } from '@/lib/utils'
 import { SparklesCore } from '../ui/sparkles'
 
+// text-3xl
 const SparklesPreview = () => {
   return (
-    <div className="flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="relative z-20 text-center text-3xl font-bold text-white md:text-7xl lg:text-9xl">
-        SaveMe
-      </h1>
-      <div className="relative h-40 w-[40rem]">
+    <div className="flex h-[calc(100dvh_-_38rem)] w-full flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="w-full text-center">
+        <h1 className="relative z-20 text-center text-7xl font-bold leading-none text-white md:text-9xl">
+          SaveMe
+        </h1>
+        <span className="ml-[0.62rem] text-xs leading-relaxed tracking-[0.62rem] md:ml-[1.5rem] md:tracking-[1.5rem]">
+          VIDEO DOWNLOADER
+        </span>
+      </div>
+
+      <div className="relative h-20 w-full max-w-3xl md:h-40">
         {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
-        <div className="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-        <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
-        <div className="absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+        <div className="absolute inset-x-1/2 top-0 h-[2px] w-11/12 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm md:w-3/4" />
+        <div className="absolute inset-x-1/2 top-0 h-px w-11/12 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent md:w-3/4" />
+        <div className="absolute inset-x-1/2 top-0 h-[5px] w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
+        <div className="absolute inset-x-1/2 top-0 h-px w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
 
         {/* Core component */}
         <SparklesCore
@@ -24,7 +32,13 @@ const SparklesPreview = () => {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 h-full w-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div
+          className={cn(
+            'absolute inset-0 h-full w-full bg-background',
+            'max-md:[mask-image:radial-gradient(150px_100px_at_top,transparent_20%,white)]',
+            'md:[mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]'
+          )}
+        />
       </div>
     </div>
   )
