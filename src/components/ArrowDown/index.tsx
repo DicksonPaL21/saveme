@@ -25,6 +25,7 @@ const transition = {
 const ArrowDown = () => {
   const [isVisible, setVisible] = useState(true)
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleNavigation = useCallback((e: any) => {
     const _window = e.currentTarget
     const _opacity = 1 - _window.pageYOffset / 100
