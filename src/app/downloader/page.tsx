@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const Downloader: React.FC = () => {
   const [url, setUrl] = useState<string>('')
-  const [downloadLink, setDownloadLink] = useState<string | null>(null)
+  // const [downloadLink, setDownloadLink] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
