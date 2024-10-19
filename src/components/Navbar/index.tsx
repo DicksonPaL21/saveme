@@ -12,8 +12,6 @@ const Navbar = () => {
     setFloating(value > 100)
   })
 
-  console.log('cc-isFloating', isFloating)
-
   return (
     <div
       className={cn(
