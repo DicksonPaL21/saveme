@@ -1,42 +1,56 @@
 const More = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h3 className="text-lg sm:text-4xl dark:text-white text-black font-extrabold text-center max-w-3xl">
-        Why is SaveMe considered the best tool for downloading YouTube videos?
-      </h3>
+    <div className="flex w-full flex-col items-center">
+      <div className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">
+        <h3 className="max-w-3xl text-center text-lg font-extrabold text-black dark:text-white sm:text-4xl">
+          Why is SaveMe considered the best tool for downloading YouTube videos?
+        </h3>
+
+        <div className="relative h-3 w-full max-w-4xl">
+          {/* Gradients */}
+          <div className="absolute inset-x-1/2 top-0 h-[2px] w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
+          <div className="absolute inset-x-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+          <div className="absolute inset-x-1/2 top-0 h-[5px] w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
+          <div className="absolute inset-x-1/2 top-0 h-px w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+
+          {/* Radial Gradient to prevent sharp edges */}
+          <div className="absolute inset-0 h-full w-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        </div>
+      </div>
+
       <div className="mt-10 w-full max-w-4xl">
-        <p className="text-center mx-auto font-light text-xs sm:text-base tracking-wide leading-relaxed">
+        <p className="mx-auto text-center text-xs font-light leading-relaxed tracking-wide sm:text-base">
           YouTube is essential for your daily entertainment. With SaveMe, you
           can easily and quickly convert and download YouTube videos to your
           device for offline enjoyment.
         </p>
         <div className="mt-10">
-          <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
+          <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">🔥Free to Use:</span> The user interface
             of the YouTube Downloader is very simple, requiring no technical
             expertise.
           </p>
 
-          <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
-            <span className="font-bold">🔥Supports All Popular Languages:</span>{' '}
+          <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
+            <span className="font-bold">🔥Supports All Popular Languages:</span>{" "}
             This is a global tool that accommodates all widely spoken languages.
           </p>
 
-          <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
+          <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">
               🔥No Registration or Software Installation Needed:
-            </span>{' '}
+            </span>{" "}
             SaveMe YouTube Video Downloader is web-based, so there&apos;s no
             need to install software or create an account.
           </p>
 
-          <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
-            <span className="font-bold">🔥Compatible with All Devices:</span>{' '}
+          <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
+            <span className="font-bold">🔥Compatible with All Devices:</span>{" "}
             This platform works seamlessly on major devices, including mobiles,
             desktops, tablets, and more.
           </p>
 
-          <p className="py-1.5 font-light text-xs sm:text-base tracking-wide leading-relaxed">
+          <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">🔥Fast Download Speeds:</span> Our
             YouTube Downloader boasts the fastest conversion and download
             speeds, reaching up to 1GB/s.
