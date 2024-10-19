@@ -1,3 +1,5 @@
+/* eslint-disable no-console, no-alert*/
+
 'use client'
 
 import { cn } from '@/lib/utils'

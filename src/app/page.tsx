@@ -1,5 +1,3 @@
-'use client'
-
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions'
