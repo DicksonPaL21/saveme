@@ -6,9 +6,15 @@ const SparklesPreview = () => {
   return (
     <div className="flex h-[calc(100dvh_-_38rem)] w-full flex-col items-center justify-center overflow-hidden rounded-md">
       <div className="w-full text-center">
-        <h1 className="relative z-20 text-center text-7xl font-bold leading-none text-white md:text-9xl">
-          SaveMe
+        <h1 className="relative z-20 text-center text-7xl font-bold leading-none md:text-9xl">
+          <span className="bg-gradient-to-b from-zinc-800 to-zinc-950 bg-clip-text text-transparent dark:from-zinc-50 dark:to-zinc-200">
+            Save
+          </span>
+          <span className="bg-gradient-to-b from-amber-400 to-yellow-500 bg-clip-text text-transparent">
+            Me
+          </span>
         </h1>
+
         <span className="ml-[0.62rem] text-xs leading-relaxed tracking-[0.62rem] md:ml-[1.5rem] md:tracking-[1.5rem]">
           VIDEO DOWNLOADER
         </span>
