@@ -16,9 +16,9 @@ const Navbar = () => {
     <div
       className={cn(
         'container sticky top-4 z-50 flex h-14 items-center justify-between rounded-full shadow-input',
-        'w-full bg-transparent transition-all duration-500 ease-in-out dark:border-none',
+        'w-full border border-transparent bg-transparent transition-all duration-500 ease-in-out',
         {
-          'max-w-3xl bg-white shadow-[rgba(0,_0,_0,_0.1)_0px_0px_10px_0px] backdrop-blur-md dark:bg-neutral-900/60':
+          'max-w-3xl border-black/5 bg-white/65 shadow-[rgba(0,_0,_0,_0.1)_0px_0px_10px_0px] backdrop-blur dark:border-white/5 dark:bg-black/65':
             isFloating,
         }
       )}
