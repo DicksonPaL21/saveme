@@ -5,7 +5,6 @@ import More from '@/components/More'
 import PlaceholdersAndVanishInputDemo from '@/components/PlaceholdersAndVanishInputDemo'
 import SupportedResources from '@/components/SupportedResources'
 import { SVGs } from '@/components/ui/pulse-beam'
-import VideoWrapper from '@/components/VideoWrapper'
 
 export default function Home() {
   return (
