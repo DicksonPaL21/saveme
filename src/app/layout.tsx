@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body
         className={cn(
-          'font-[family-name:var(--font-geist-sans)] antialiased',
+          'scroll-smooth font-[family-name:var(--font-geist-sans)] antialiased',
           geistSans.variable,
           geistMono.variable
         )}

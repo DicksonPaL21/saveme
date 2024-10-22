@@ -23,11 +23,6 @@ const Navbar = () => {
         }
       )}
     >
-      {/* <span className="text-lg font-bold">
-        <span className="text-white">Save</span>
-        <span className="text-yellow-500">Me</span>
-      </span> */}
-
       <Link href={{ pathname: '/' }} className="text-lg font-bold">
         <span className="text-white">Save</span>
         <span className="text-yellow-500">Me</span>
