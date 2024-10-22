@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const BuyMeACoffeeButton = () => {
   return (
     <a
@@ -5,10 +7,11 @@ const BuyMeACoffeeButton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
+      <Image
         src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
         alt="Buy Me A Coffee"
-        style={{ height: '60px', width: '217px' }}
+        width="217"
+        height="60"
       />
     </a>
   )
