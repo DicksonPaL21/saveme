@@ -6,22 +6,22 @@ const Tools = () => {
       <h4 className="font-semibold text-black dark:text-white">Tools</h4>
       <CustomLink
         className="my-2"
-        href="/tools/youtube-video-downloader"
+        href={{ pathname: '/tools/youtube-video-downloader' }}
         label="Youtube Video Downloader"
       />
       <CustomLink
         className="my-2"
-        href="/tools/facebook-video-downloader"
+        href={{ pathname: '/tools/facebook-video-downloader' }}
         label="Facebook Video Downloader"
       />
       <CustomLink
         className="my-2"
-        href="/tools/instagram-video-downloader"
+        href={{ pathname: '/tools/instagram-video-downloader' }}
         label="Instagram Video Downloader"
       />
       <CustomLink
         className="my-2"
-        href="/tools/tiktok-video-downloader"
+        href={{ pathname: '/tools/tiktok-video-downloader' }}
         label="Tiktok Video Downloader"
       />
     </div>
