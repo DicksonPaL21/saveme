@@ -40,7 +40,7 @@ const VideoWrapper = () => {
             <SelectContent>
               <SelectGroup>
                 {links.map((link) => (
-                  <SelectItem value={link.quality}>
+                  <SelectItem key={link.quality} value={link.quality}>
                     {link.qualityLabel}
                   </SelectItem>
                 ))}

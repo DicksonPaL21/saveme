@@ -23,10 +23,15 @@ const Navbar = () => {
         }
       )}
     >
-      <span className="text-lg font-bold">
+      {/* <span className="text-lg font-bold">
         <span className="text-white">Save</span>
         <span className="text-yellow-500">Me</span>
-      </span>
+      </span> */}
+
+      <Link href={{ pathname: '/' }} className="text-lg font-bold">
+        <span className="text-white">Save</span>
+        <span className="text-yellow-500">Me</span>
+      </Link>
       <div className="flex gap-1.5">
         <Link
           href={{ pathname: '/tools/youtube-video-downloader' }}
