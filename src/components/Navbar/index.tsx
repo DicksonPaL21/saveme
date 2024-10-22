@@ -29,25 +29,25 @@ const Navbar = () => {
       </span>
       <div className="flex gap-1.5">
         <Link
-          href="/youtube"
+          href={{ pathname: '/youtube' }}
           className="px-3 py-1.5 leading-relaxed tracking-wide transition-all duration-200 ease-in hover:rounded-full hover:bg-white/20"
         >
           Youtube
         </Link>
         <Link
-          href="/facebook"
+          href={{ pathname: '/facebook' }}
           className="px-3 py-1.5 leading-relaxed tracking-wide transition-all duration-200 ease-in hover:rounded-full hover:bg-white/20"
         >
           Facebook
         </Link>
         <Link
-          href="/instagram"
+          href={{ pathname: '/instagram' }}
           className="px-3 py-1.5 leading-relaxed tracking-wide transition-all duration-200 ease-in hover:rounded-full hover:bg-white/20"
         >
           Instagram
         </Link>
         <Link
-          href="/tiktok"
+          href={{ pathname: '/tiktok' }}
           className="px-3 py-1.5 leading-relaxed tracking-wide transition-all duration-200 ease-in hover:rounded-full hover:bg-white/20"
         >
           Tiktok

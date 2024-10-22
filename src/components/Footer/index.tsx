@@ -33,8 +33,14 @@ const Footer = () => {
           <p className="mr-auto text-xs font-extralight leading-relaxed tracking-wide sm:text-sm">
             ©️ 2024 SaveMe. All Rights Reserved
           </p>
-          <CustomLink href="/terms-of-service" label="Terms of Service" />
-          <CustomLink href="/privacy-policy" label="Privacy Policy" />
+          <CustomLink
+            href={{ pathname: '/terms-of-service' }}
+            label="Terms of Service"
+          />
+          <CustomLink
+            href={{ pathname: '/privacy-policy' }}
+            label="Privacy Policy"
+          />
         </div>
       </div>
     </footer>
