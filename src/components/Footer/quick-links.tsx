@@ -26,11 +26,6 @@ const QuickLinks = () => {
         href={{ pathname: '/contact' }}
         label="Contact"
       />
-      <CustomLink
-        className="my-2"
-        href={{ pathname: '/languages-supported' }}
-        label="Languages"
-      />
     </div>
   )
 }
