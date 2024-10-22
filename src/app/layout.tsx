@@ -31,10 +31,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark !scroll-smooth">
       <body
         className={cn(
-          'scroll-smooth font-[family-name:var(--font-geist-sans)] antialiased',
+          'font-[family-name:var(--font-geist-sans)] antialiased',
           geistSans.variable,
           geistMono.variable
         )}
