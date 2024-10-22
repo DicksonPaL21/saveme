@@ -7,10 +7,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 export function PlaceholdersAndVanishInput({
+  name = 'input',
   placeholders,
   onChange,
   onSubmit,
 }: {
+  name?: string
   placeholders: string[]
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void
@@ -192,6 +194,7 @@ export function PlaceholdersAndVanishInput({
         ref={canvasRef}
       />
       <input
+        name={name}
         onChange={(e) => {
           if (!animating) {
             setValue(e.target.value)
@@ -266,7 +269,7 @@ export function PlaceholdersAndVanishInput({
                 duration: 0.3,
                 ease: 'linear',
               }}
-              className="w-[calc(100%-2rem)] truncate pl-4 text-left text-sm font-normal text-neutral-500 dark:text-zinc-500 sm:pl-12 sm:text-base"
+              className="w-full truncate pl-4 pr-20 text-left text-sm font-normal text-neutral-500 dark:text-zinc-500 sm:pl-10 sm:text-base"
             >
               {placeholders[currentPlaceholder]}
             </motion.p>

@@ -1,4 +1,5 @@
 import ArrowDown from '@/components/ArrowDown'
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
@@ -31,10 +32,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={cn('antialiased', geistSans.variable, geistMono.variable)}
+        className={cn(
+          'font-[family-name:var(--font-geist-sans)] antialiased',
+          geistSans.variable,
+          geistMono.variable
+        )}
       >
         <Navbar />
         {children}
+        <Footer />
         <ArrowDown />
         <script
           data-name="BMC-Widget"

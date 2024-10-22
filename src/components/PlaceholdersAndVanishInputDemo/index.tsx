@@ -15,6 +15,9 @@ const PlaceholdersAndVanishInputDemo = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log('submitted')
+
+    const formData = new FormData(e.currentTarget)
+    console.log('cc-submit', formData.get('video-url'))
   }
   return (
     <div className="relative z-10 flex h-[40rem] w-full max-w-2xl flex-col items-center justify-center px-4">
@@ -38,6 +41,7 @@ const PlaceholdersAndVanishInputDemo = () => {
         containerClassName="w-full max-w-xl"
       >
         <PlaceholdersAndVanishInput
+          name="video-url"
           placeholders={placeholders}
           onChange={handleChange}
           onSubmit={onSubmit}
