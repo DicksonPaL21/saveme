@@ -5,6 +5,7 @@ import More from '@/components/More'
 import PlaceholdersAndVanishInputDemo from '@/components/PlaceholdersAndVanishInputDemo'
 import SupportedResources from '@/components/SupportedResources'
 import { SVGs } from '@/components/ui/pulse-beam'
+import VideoWrapper from '@/components/VideoWrapper'
 
 export default function Home() {
   return (
@@ -15,6 +16,12 @@ export default function Home() {
           <SVGs />
         </div>
       </div>
+      {/* <div className="bg-grid-small-black dark:bg-grid-small-white w-dvw py-28 shadow-[inset_0_0_60px_0_black]">
+        <div className="mx-auto flex w-full max-w-4xl flex-col">
+          <VideoWrapper />
+        </div>
+      </div> */}
+
       <p className="mx-auto max-w-4xl text-center text-xs font-light leading-relaxed tracking-wide sm:text-base">
         <span className="font-bold">SaveMe</span> is a web-based video
         downloader application that allows users to effortlessly download videos

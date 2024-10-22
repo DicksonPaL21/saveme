@@ -8,6 +8,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.buymeacoffee.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
     ],
   },
   experimental: {
