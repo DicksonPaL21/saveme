@@ -1,9 +1,17 @@
+'use client'
+
+import { usePlatformContext } from '@/app/tools/providers'
+import { capitalize } from '@/utils/formatters/string'
+
 const More = () => {
+  const { platform } = usePlatformContext()
+
   return (
     <div className="flex w-full flex-col items-center">
       <div className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">
         <h3 className="max-w-3xl text-center text-lg font-extrabold text-black dark:text-white sm:text-4xl">
-          Why is SaveMe considered the best tool for downloading YouTube videos?
+          Why is SaveMe considered the best tool for downloading{' '}
+          {capitalize(platform)} videos?
         </h3>
 
         <div className="relative h-3 w-full max-w-3xl">
@@ -20,15 +28,15 @@ const More = () => {
 
       <div className="mt-10 w-full max-w-4xl">
         <p className="mx-auto text-center text-xs font-light leading-relaxed tracking-wide sm:text-base">
-          YouTube is essential for your daily entertainment. With SaveMe, you
-          can easily and quickly convert and download YouTube videos to your
-          device for offline enjoyment.
+          {capitalize(platform)} is essential for your daily entertainment. With
+          SaveMe, you can easily and quickly convert and download{' '}
+          {capitalize(platform)} videos to your device for offline enjoyment.
         </p>
         <div className="mt-10">
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">🔥Free to Use:</span> The user interface
-            of the YouTube Downloader is very simple, requiring no technical
-            expertise.
+            of the {capitalize(platform)} Video Downloader is very simple,
+            requiring no technical expertise.
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
@@ -40,8 +48,8 @@ const More = () => {
             <span className="font-bold">
               🔥No Registration or Software Installation Needed:
             </span>{' '}
-            SaveMe YouTube Video Downloader is web-based, so there&apos;s no
-            need to install software or create an account.
+            SaveMe {capitalize(platform)} Video Downloader is web-based, so
+            there&apos;s no need to install software or create an account.
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
@@ -52,8 +60,8 @@ const More = () => {
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
             <span className="font-bold">🔥Fast Download Speeds:</span> Our
-            YouTube Downloader boasts the fastest conversion and download
-            speeds, reaching up to 1GB/s.
+            {capitalize(platform)} Video Downloader boasts the fastest
+            conversion and download speeds, reaching up to 1GB/s.
           </p>
         </div>
       </div>

@@ -25,16 +25,14 @@ export const metadata: Metadata = {
     videos for offline viewing, making it a must-have tool for content enthusiasts.`,
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+type LayoutProps = Readonly<{ children: React.ReactNode }>
+
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className="dark !scroll-smooth">
       <body
         className={cn(
-          'font-[family-name:var(--font-geist-sans)] antialiased',
+          'flex min-h-dvh flex-col font-[family-name:var(--font-geist-sans)] antialiased',
           geistSans.variable,
           geistMono.variable
         )}

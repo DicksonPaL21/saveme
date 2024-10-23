@@ -1,9 +1,16 @@
+'use client'
+
+import { usePlatformContext } from '@/app/tools/providers'
+import { capitalize } from '@/utils/formatters/string'
+
 const HowToDownload = () => {
+  const { platform } = usePlatformContext()
+
   return (
     <div className="flex w-full flex-col items-center">
       <div className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">
         <h3 className="max-w-3xl text-center text-lg font-extrabold text-black dark:text-white sm:text-4xl">
-          How to download Youtube Videos?
+          How to download {capitalize(platform)} Videos?
         </h3>
 
         <div className="relative h-3 w-full max-w-3xl">
