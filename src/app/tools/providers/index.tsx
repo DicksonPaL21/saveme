@@ -1,25 +1,26 @@
 'use client'
 
 import { useParams } from 'next/navigation'
-import { useContext, useState } from 'react'
-import { DataProps, PlatformContext, PlatformProviderProps } from './typs'
+import { createContext, useContext, useState } from 'react'
+import { INITIAL_VALUE } from './constants'
+import {
+  ContentProps,
+  PlatformContextProps,
+  PlatformProviderProps,
+} from './typs'
 
-export const usePlatformContext = () => {
-  const context = useContext(PlatformContext)
-  if (context === undefined) {
-    throw new Error('usePlatformContext must be used within a PlatformProvider')
-  }
-  return context
-}
+const PlatformContext = createContext<PlatformContextProps>(INITIAL_VALUE)
+
+export const usePlatformContext = () => useContext(PlatformContext)
 
 export const PlatformProvider: React.FC<PlatformProviderProps> = ({
   children,
 }) => {
-  const [value, setValue] = useState<DataProps | undefined>(undefined)
+  const [content, setContent] = useState<ContentProps | undefined>(undefined)
   const [platform] = String(useParams().slug).split('-')
 
   return (
-    <PlatformContext.Provider value={{ platform, value, setValue }}>
+    <PlatformContext.Provider value={{ platform, content, setContent }}>
       {children}
     </PlatformContext.Provider>
   )
