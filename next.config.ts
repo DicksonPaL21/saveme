@@ -15,15 +15,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  redirects: async () => {
-    return [
-      {
-        source: '/',
-        destination: '/tools/youtube-video-downloader',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 export default nextConfig

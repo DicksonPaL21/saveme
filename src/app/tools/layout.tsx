@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <PlatformProvider>
       <main className="container mb-24 flex flex-col items-center gap-28">
-        <div className="relative flex h-[80vh] w-full items-center justify-center overflow-hidden">
+        <div className="relative flex h-[80dvh] w-full items-center justify-center overflow-hidden">
           <PlaceholdersAndVanishInputDemo />
           <div className="absolute inset-0 flex items-center justify-center">
             <SVGs />

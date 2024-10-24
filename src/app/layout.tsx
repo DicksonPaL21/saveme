@@ -1,6 +1,7 @@
 import ArrowDown from '@/components/ArrowDown'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import ScrollToTop from '@/components/ScrollToTop'
 import BmcWidget from '@/components/widget/Bmc'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps) {
           geistMono.variable
         )}
       >
+        <ScrollToTop />
         <Navbar />
         {children}
         <Footer />

@@ -64,6 +64,9 @@
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+
+    --h-navbar: 3.5rem;
+    --t-navbar: 1rem;
   }
 
   body {
