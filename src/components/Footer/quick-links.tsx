@@ -4,7 +4,7 @@ const QuickLinks = () => {
   return (
     <div className="ml-auto flex flex-col">
       <h4 className="font-semibold text-black dark:text-white">Quick Links</h4>
-      <CustomLink className="my-2" href={{ pathname: '/home' }} label="Home" />
+      <CustomLink className="my-2" href={{ pathname: '/' }} label="Home" />
       <CustomLink
         className="my-2"
         href={{ pathname: '/about' }}
