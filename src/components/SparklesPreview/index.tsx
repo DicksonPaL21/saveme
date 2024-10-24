@@ -12,7 +12,8 @@ const SparklesPreview = ({
   return (
     <div
       className={cn(
-        'flex h-[calc(100dvh_-_38rem)] w-full flex-col items-center justify-center overflow-hidden rounded-md',
+        'flex w-full flex-col items-center justify-center overflow-hidden rounded-md',
+        { 'h-[calc(100dvh_-_38rem)]': !sparkHidden },
         className
       )}
     >
