@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation'
 import { useContext, useState } from 'react'
-import { PlatformContext, PlatformProviderProps } from './typs'
+import { DataProps, PlatformContext, PlatformProviderProps } from './typs'
 
 export const usePlatformContext = () => {
   const context = useContext(PlatformContext)
@@ -15,7 +15,7 @@ export const usePlatformContext = () => {
 export const PlatformProvider: React.FC<PlatformProviderProps> = ({
   children,
 }) => {
-  const [value, setValue] = useState<{}>({})
+  const [value, setValue] = useState<DataProps | undefined>(undefined)
   const [platform] = String(useParams().slug).split('-')
 
   return (
