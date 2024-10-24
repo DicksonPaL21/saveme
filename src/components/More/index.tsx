@@ -59,7 +59,7 @@ const More = () => {
           </p>
 
           <p className="py-1.5 text-xs font-light leading-relaxed tracking-wide sm:text-base">
-            <span className="font-bold">🔥Fast Download Speeds:</span> Our
+            <span className="font-bold">🔥Fast Download Speeds:</span> Our{' '}
             {capitalize(platform)} Video Downloader boasts the fastest
             conversion and download speeds, reaching up to 1GB/s.
           </p>
