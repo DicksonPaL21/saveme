@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -13,10 +14,6 @@ const nextConfig = {
         hostname: 'img.youtube.com',
       },
     ],
-  },
-  experimental: {
-    typedRoutes: true,
-    missingSuspenseWithCSRBailout: false,
   },
   redirects: async () => {
     return [
