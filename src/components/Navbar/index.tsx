@@ -13,12 +13,12 @@ const Navbar = () => {
   })
 
   return (
-    <div
+    <nav
       className={cn(
         'container sticky top-[var(--t-navbar)] z-50 flex h-[var(--h-navbar)] items-center justify-between rounded-full shadow-input',
         'w-full border border-transparent bg-transparent transition-all duration-500 ease-in-out',
         {
-          'max-w-3xl border-black/5 bg-white/65 shadow-[rgba(0,_0,_0,_0.1)_0px_0px_10px_0px] backdrop-blur dark:border-white/5 dark:bg-black/65':
+          'max-w-3xl border-black/5 bg-[hsla(0,0%,100%,.8)] shadow-[rgba(0,_0,_0,_0.1)_0px_0px_10px_0px] [backdrop-filter:saturate(180%)_blur(5px)] dark:border-white/5 dark:bg-[rgba(0,0,0,.8)]':
             isFloating,
         }
       )}
@@ -53,7 +53,7 @@ const Navbar = () => {
           Tiktok
         </Link>
       </div>
-    </div>
+    </nav>
   )
 }
 
